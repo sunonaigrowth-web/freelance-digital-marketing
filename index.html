@@ -113,36 +113,6 @@ nav{
 .stat-num{font-size:28px;font-weight:800;color:var(--blue2);text-shadow:0 0 12px rgba(0,170,255,0.4);}
 .stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:3px;}
 
-
-/* ── BANK LOGOS ── */
-.bank-logos{
-  margin-top:35px;
-  margin-bottom:15px;
-  text-align:center;
-}
-.bank-logos p{
-  color:var(--muted);
-  font-size:13px;
-  margin-bottom:20px;
-  letter-spacing:.5px;
-}
-.bank-logo-grid{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:28px;
-}
-.bank-logo-grid img{
-  height:42px;
-  width:auto;
-  opacity:.95;
-  transition:.3s ease;
-}
-.bank-logo-grid img:hover{
-  transform:scale(1.08);
-}
-
 /* ── TRUST BANNER ── */
 .trust-banner{
   background:linear-gradient(90deg,rgba(0,170,255,0.05),rgba(0,170,255,0.1),rgba(0,170,255,0.05));
@@ -182,6 +152,22 @@ nav{
   transition:.3s;cursor:default;
 }
 .partner-chip:hover{border-color:rgba(0,170,255,0.4);box-shadow:0 0 16px rgba(0,170,255,0.15);transform:translateY(-2px);}
+
+
+.logos-grid{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:40px;
+}
+.logos-grid img{
+  height:60px;
+  width:auto;
+  background:#fff;
+  padding:10px 15px;
+  border-radius:12px;
+}
 
 /* ── COURSE CARDS ── */
 .courses-grid{
@@ -489,8 +475,13 @@ footer strong{color:#fff;}
     <p class="section-label">Placement Partners</p>
     <h2 class="section-title">Top Companies <span class="hl">Hiring Through Us</span></h2>
     <p class="section-desc">Get placed directly on the payroll of India's leading banks &amp; financial institutions</p>
-    <div class="partners-grid">
-      <div class="partner-chip">🏦 Bandhan Bank</div>
+    <div class="partners-grid logos-grid">
+      <img src="assets/logos/Bandhan_Bank_Svg_Logo.svg" alt="Bandhan Bank">
+      <img src="assets/logos/ICICI Bank-logobase.net.svg" alt="ICICI Bank">
+      <img src="assets/logos/Punjab National Bank (PNB)-logobase.net.svg" alt="PNB">
+      <img src="assets/logos/State Bank of India (SBI)-logobase.net.svg" alt="SBI">
+      <img src="assets/logos/Yes Bank-logobase.net.svg" alt="Yes Bank">
+    </div>
       <div class="partner-chip">🚗 Mahindra Finance</div>
       <div class="partner-chip">💳 Paytm (Fintech)</div>
       <div class="partner-chip">🏠 Piramal Finance</div>
